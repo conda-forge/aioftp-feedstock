@@ -1,25 +1,27 @@
 {% set name = "aioftp" %}
-{% set version = "0.13.0" %}
+{% set version = "0.16.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5711c03433b510c101e9337069033133cca19b508b5162b414bed24320de6c18
+  sha256: 94648d17dd3ca44614b59e8f795991b447258d82aa1b4cfecc0aceccf01b7495
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv "
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv '
 
 requirements:
   host:
     - pip
-    - python >=3.5.3
+    - python >=3.6
   run:
-    - python >=3.5.3
+    - python >=3.6
+  # suggests:
+  # - siosocks # if socks support is desired
 
 test:
   imports:
