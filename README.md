@@ -5,7 +5,7 @@ Home: http://aioftp.readthedocs.org/
 
 Package license: Apache 2
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: FTP client/server for Python asyncio
 
