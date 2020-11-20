@@ -3,7 +3,7 @@ About aioftp
 
 Home: http://aioftp.readthedocs.org/
 
-Package license: Apache 2
+Package license: Apache-2.0
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/aioftp-feedstock/blob/master/LICENSE.txt)
 
@@ -116,6 +116,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@cadair](https://github.com/cadair/)
 * [@epruesse](https://github.com/epruesse/)
 * [@nabobalis](https://github.com/nabobalis/)
 
