@@ -5,11 +5,11 @@ Home: http://aioftp.readthedocs.org/
 
 Package license: Apache 2
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/aioftp-feedstock/blob/master/LICENSE.txt)
 
 Summary: FTP client/server for Python asyncio
 
-
+Development: https://github.com/aio-libs/aioftp
 
 Current build status
 ====================
@@ -117,4 +117,5 @@ Feedstock Maintainers
 =====================
 
 * [@epruesse](https://github.com/epruesse/)
+* [@nabobalis](https://github.com/nabobalis/)
 
