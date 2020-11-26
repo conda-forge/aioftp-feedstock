@@ -10,18 +10,16 @@ source:
   sha256: 8433ff21317e71ef1f4d8cb8f7fe58365c04b5174142d9643e22343cfb35da1b
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv '
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
   run:
-    - python >=3.6
-  # suggests:
-  # - siosocks # if socks support is desired
+    - python >=3.7
 
 test:
   imports:
@@ -29,7 +27,7 @@ test:
 
 about:
   home: http://aioftp.readthedocs.org/
-  license: Apache 2
+  license: Apache-2.0
   license_family: APACHE
   license_file: license.txt
   summary: FTP client/server for Python asyncio
@@ -38,3 +36,5 @@ about:
 extra:
   recipe-maintainers:
     - epruesse
+    - nabobalis
+    - cadair
