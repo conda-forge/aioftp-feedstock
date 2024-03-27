@@ -149,6 +149,3 @@ Feedstock Maintainers
 * [@epruesse](https://github.com/epruesse/)
 * [@nabobalis](https://github.com/nabobalis/)
 
-
-<!-- dummy commit to enable rerendering -->
-
