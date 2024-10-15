@@ -1,5 +1,5 @@
 {% set name = "aioftp" %}
-{% set version = "0.22.3" %}
+{% set version = "0.23.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,19 +7,20 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: baa2b13186aa01622e4b82f27c2f48f4dafb48e457a6b18fcda99a925e0dc270
+  sha256: b80eadd8ca95d2bbbcfabe7de15cbe01ac117b2e7467717374de467bad93570b
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv '
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - setuptools
+    - python >=3.9
   run:
-    - python >=3.8
+    - python >=3.9
 
 test:
   imports:
