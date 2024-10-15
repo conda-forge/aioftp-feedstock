@@ -17,9 +17,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
+    - setuptools
+    - python >=3.9
   run:
-    - python >=3.8
+    - python >=3.9
 
 test:
   imports:
