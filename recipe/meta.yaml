@@ -1,5 +1,5 @@
 {% set name = "aioftp" %}
-{% set version = "0.26.2" %}
+{% set version = "0.27.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ecd8cc9687bbb5e1b4dddc155aa1f3ea873d6e9f9e968221378daf04c2e4f763
+  sha256: 7c048c3220081796c59832a6fd9fd8fad97e3cec12a50be3abccf2dcbbeb261a
 
 build:
   number: 0
